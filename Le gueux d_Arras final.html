@@ -1,0 +1,2471 @@
+<tw-storydata name="Le gueux d&#39;Arras final" startnode="13" creator="Twine" creator-version="2.11.1" format="SugarCube" format-version="2.36.1" ifid="fa77719c-4e01-4637-b692-b61cc8cde7a9" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*------------------------------------------------------------*/
+/*-------------------------LEFT BAR---------------------------*/
+/*------------------------------------------------------------*/
+
+/*display or not the left bar*/
+#ui-bar {
+ display: none;
+}
+
+
+/*------------------------------------------------------------*/
+/* -----------------------TEXT-STYLE--------------------------*/
+/*------------------------------------------------------------*/
+
+/* add the scroll option of the text */
+#story {
+	position: fixed;
+	left: 7%;
+	right: -15%;
+	top: 0;
+	bottom: -10%; /* Set this to be a bit greater than your bar's height. */
+    margin-left: 10%;
+	margin-top: 0;
+	padding-right: -10%;
+	padding-top: -10%;
+	overflow: auto;
+}
+
+/* Text style for the Wife */
+#Wife{
+  color:pink;
+  font-style: italic;
+  background-color: transparent;
+  /*The 4th number is the opacity of the background of the text*/
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+/* Text style for the Chef */
+#Chef{
+  color:brown;
+  font-style: italic;
+  background-color: transparent;
+  /*The 4th number is the opacity of the background of the text*/
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+/* Text style for Felindra */
+#BRUITAGE{
+  color:red;
+  font-style: bold;
+  /*The 4th number is the opacity of the background of the text*/
+  background-color: rgba(34, 34, 34, 1);
+}
+
+
+
+
+/* Text style for the Link */
+#Link{
+  color:black; 
+  font-weight: bold;
+  font-size: 150%;
+  font-style: normal;
+}
+
+/* chnge color of all links */
+.link-internal {color: #F0E68C}
+
+/* Text style for the Narrator */
+#Narrator{
+  color:#F0E68C;
+  font-family: Apple Chancery;
+  font-style: normal;
+}
+
+
+
+/* Text style for all the text */
+body {
+   background-color: white;
+   color: darkgrey;
+   font-family: Futura,Impact,Helvetica,sans-serif;
+   font-size: 125%;
+   background-size: 100%;
+   margin-left: 10%;
+   background-repeat: no-repeat;
+}
+
+.text_intro {
+  font-family: Apple Chancery;
+  
+  height: 450px;
+  width: 800px;
+
+  left: 15%;
+  right: -10%;
+  top: 30%;
+  bottom: 0%; /* Set this to be a bit greater than your bar's height. */
+  margin-left: 10%;
+  margin-top: 0;
+  
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  overflow-y: scroll;
+  background: #464343;
+  
+  border-width: thick;
+  border: solid;
+  border-color: #F0E68C;
+  
+  opacity: 0.8;
+  
+  color: #F0E68C;
+  font-size: 125%;
+  
+}
+/* to remove the scrolling bar from rectangle */
+.text_intro::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.text {
+  font-style: italic;
+  font-family: Apple Chancery;
+  
+  height: 40%;
+  width: 50%;
+
+  left: 35%;
+  right: -10%;
+  top: 58%;
+  bottom: 0%; /* Set this to be a bit greater than your bar's height. */
+  margin-left: 10%;
+  margin-top: 0;
+  
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  overflow-y: scroll;
+  background: #464343;
+
+  opacity: 0.8;
+  
+  border-width: thick;
+  border: solid;
+  border-color: #F0E68C;
+  
+  color: #F0E68C;
+  font-size: 125%;
+  
+}
+
+/* to remove the scrolling bar from rectangle */
+.text::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.text_personnages {
+  font-style: italic;
+  font-family: Apple Chancery;
+  
+  height: 15%;
+  width: 21%;
+
+  left: 30%;
+  right: -10%;
+  top: 10%;
+  bottom: 0%; /* Set this to be a bit greater than your bar's height. */
+  margin-left: 10%;
+  margin-top: 0;
+  
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  overflow-y: scroll;
+  background: #464343;
+
+  opacity: 0.8;
+  
+  border-width: thick;
+  border: solid;
+  border-color: #F0E68C;
+  
+  color: #F0E68C;
+  font-size: 125%;
+  
+}
+
+/* to remove the scrolling bar from rectangle */
+.text_personnages::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+/*------------------------------------------------------------*/
+/* -------------------------IMAGES----------------------------*/
+/*------------------------------------------------------------*/
+
+/* Loading of the images in classes */
+
+/* Fonds avec personnages */
+.Intro {
+	background-image: url('Images/1.Fonds Personnages/Village+P.png');
+}
+.Village {
+	background-image: url('Images/village.png');
+}
+.Village_wife {
+	background-image: url('Images/1.Fonds Personnages/Village+P.png');
+}
+.Tente_capitaine {
+	background-image: url('Images/1.Fonds Personnages/Tente_capitaine+P.png');
+}
+.Infirmerie_infirm {
+	background-image: url('Images/1.Fonds Personnages/Infirmerie+P.png');
+}
+.Dortoir_marechal {
+	background-image: url('Images/1.Fonds Personnages/Dortoir+P.png');
+}
+.Cuisine_cuistot {
+	background-image: url('Images/1.Fonds Personnages/cuisine+P.png');
+}
+.Champ_de_bataille_espagnol {
+	background-image: url('Images/1.Fonds Personnages/Champdebataille+E.png');
+}
+.Champ_de_bataille_cyrano {
+	background-image: url('Images/1.Fonds Personnages/Champdebataille+C.png');
+}
+.Champ_de_bataille_soldat {
+	background-image: url('Images/1.Fonds Personnages/Champ de bataille+P.png');
+}
+.Armurerie_felindra {
+	background-image: url('Images/1.Fonds Personnages/armurerie+P.png');
+}
+.Armurerie_marechal {
+	background-image: url('Images/1.Fonds Personnages/armurerie+M.png');
+}
+.Arras_nuit_espagnol {
+	background-image: url('Images/1.Fonds Personnages/Arasnuit+P.png');
+}
+.Arras_nuit_colonel {
+	background-image: url('Images/1.Fonds Personnages/Arasnuit+C.png');
+}
+
+
+/* Fonds sans personnages */
+
+.Intro {
+	background-image: url('Images/intro.jpg');
+}
+.Village {
+	background-image: url('Images/1.Fonds simples/Village.png');
+}
+.Tente {
+	background-image: url('Images/1.Fonds simples/Tente_capitaine.png');
+}
+.Ligne_de_front {
+	background-image: url('Images/1.Fonds simples/Ligne_de_front.png');
+}
+.Infirmerie {
+	background-image: url('Images/1.Fonds simples/Infirmerie.webp');
+}
+.Dortoir {
+	background-image: url('Images/1.Fonds simples/Dortoir.webp');
+}
+.Refectoire {
+	background-image: url('Images/1.Fonds simples/Cuisine_Refectoire.webp');
+}
+.Champ_de_bataille {
+	background-image: url('Images/1.Fonds simples/Champ de bataille.png');
+}
+.Arras_by_night {
+	background-image: url('Images/1.Fonds simples/Arras_by_night.png');
+}
+.Armurerie {
+	background-image: url('Images/1.Fonds simples/Armurerie.png');
+}
+
+/* Fonds avec accessoires */
+
+.Refectoire_Pomme {
+	background-image: url('Images/1.Fonts accessoires/cuisine+Pomme.png');
+}
+.Tente_capitaine_couteau {
+	background-image: url('Images/1.Fonts accessoires/tentecapitaine+C.png');
+}
+.Cuisinier_lettre {
+	background-image: url('Images/1.Fonds Personnages/cuisine+P_lettre.png');
+}
+
+/* Personnages avec descriptions */
+.Personnages1 {
+	background-image: url('Images/Personnages presentation/Personnages1.png');
+}
+.Personnages2 {
+	background-image: url('Images/Personnages presentation/Personnages2.png');
+}
+.Personnages3 {
+	background-image: url('Images/Personnages presentation/Personnages3.png');
+}
+.Personnages4 {
+	background-image: url('Images/Personnages presentation/Personnages4.png');
+}
+.Personnages5 {
+	background-image: url('Images/Personnages presentation/Personnages5.png');
+}
+
+/* fond parchemin carte */
+.Parchemin {
+	background-image: url('Images/Carte/parchemin.jpg');
+}
+
+Carte{
+	position: fixed;
+	left: -6%;
+	right: -10%;
+	top: 0%;
+	bottom: -10%; /* Set this to be a bit greater than your bar's height. */
+    margin-left: -15%;
+	margin-top: 0;
+	padding-right: -10%;
+	padding-top: -10%;
+	overflow: auto;
+   background-size: 100%;
+   margin-left: 10%;
+   background-repeat: no-repeat;
+    }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Tweaked version of maphilight (12-06-2016 build) to work with SugarCube 2 and Twine
+!function(a,b){"function"==typeof define&&define.amd?define(["jquery"],b):b(a.jQuery)}(window,function(a){var b,c,d,e,f,g,h,i,j,k,l;if(c=!!document.createElement("canvas").getContext,b=function(){var a=document.createElement("div");a.innerHTML='<v:shape id="vml_flag1" adj="1" />';var b=a.firstChild;return b.style.behavior="url(#default#VML)",!b||"object"==typeof b.adj}(),!c&&!b)return void(a.fn.maphilight=function(){return this});if(c){i=function(a){return Math.max(0,Math.min(parseInt(a,16),255))},j=function(a,b){return"rgba("+i(a.substr(0,2))+","+i(a.substr(2,2))+","+i(a.substr(4,2))+","+b+")"},d=function(b){var c=a('<canvas style="width:'+a(b).width()+"px;height:"+a(b).height()+'px;"></canvas>').get(0);return c.getContext("2d").clearRect(0,0,a(b).width(),a(b).height()),c};var m=function(a,b,c,d,e){if(d=d||0,e=e||0,a.beginPath(),"rect"==b)a.rect(c[0]+d,c[1]+e,c[2]-c[0],c[3]-c[1]);else if("poly"==b){a.moveTo(c[0]+d,c[1]+e);for(var f=2;f<c.length;f+=2)a.lineTo(c[f]+d,c[f+1]+e)}else"circ"==b&&a.arc(c[0]+d,c[1]+e,c[2],0,2*Math.PI,!1);a.closePath()};e=function(b,c,d,e,f){var h=b.getContext("2d");if(e.shadow){h.save(),"inside"==e.shadowPosition&&(m(h,c,d),h.clip());var i=100*b.width,k=100*b.height;m(h,c,d,i,k),h.shadowOffsetX=e.shadowX-i,h.shadowOffsetY=e.shadowY-k,h.shadowBlur=e.shadowRadius,h.shadowColor=j(e.shadowColor,e.shadowOpacity);var l=e.shadowFrom;l||(l="outside"==e.shadowPosition?"fill":"stroke"),"stroke"==l?(h.strokeStyle="rgba(0,0,0,1)",h.stroke()):"fill"==l&&(h.fillStyle="rgba(0,0,0,1)",h.fill()),h.restore(),"outside"==e.shadowPosition&&(h.save(),m(h,c,d),h.globalCompositeOperation="destination-out",h.fillStyle="rgba(0,0,0,1);",h.fill(),h.restore())}h.save(),m(h,c,d),e.fill&&(h.fillStyle=j(e.fillColor,e.fillOpacity),h.fill()),e.stroke&&(h.strokeStyle=j(e.strokeColor,e.strokeOpacity),h.lineWidth=e.strokeWidth,h.stroke()),h.restore(),e.fade&&a(b).css("opacity",0).animate({opacity:1},100)},f=function(a){a.getContext("2d").clearRect(0,0,a.width,a.height)}}else d=function(b){return a('<var style="zoom:1;overflow:hidden;display:block;width:'+b.width+"px;height:"+b.height+'px;"></var>').get(0)},e=function(b,c,d,e,f){var g,h,i,j;for(var k in d)d[k]=parseInt(d[k],10);g='<v:fill color="#'+e.fillColor+'" opacity="'+(e.fill?e.fillOpacity:0)+'" />',h=e.stroke?'strokeweight="'+e.strokeWidth+'" stroked="t" strokecolor="#'+e.strokeColor+'"':'stroked="f"',i='<v:stroke opacity="'+e.strokeOpacity+'"/>',"rect"==c?j=a('<v:rect name="'+f+'" filled="t" '+h+' style="zoom:1;margin:0;padding:0;display:block;position:absolute;left:'+d[0]+"px;top:"+d[1]+"px;width:"+(d[2]-d[0])+"px;height:"+(d[3]-d[1])+'px;"></v:rect>'):"poly"==c?j=a('<v:shape name="'+f+'" filled="t" '+h+' coordorigin="0,0" coordsize="'+b.width+","+b.height+'" path="m '+d[0]+","+d[1]+" l "+d.join(",")+' x e" style="zoom:1;margin:0;padding:0;display:block;position:absolute;top:0px;left:0px;width:'+b.width+"px;height:"+b.height+'px;"></v:shape>'):"circ"==c&&(j=a('<v:oval name="'+f+'" filled="t" '+h+' style="zoom:1;margin:0;padding:0;display:block;position:absolute;left:'+(d[0]-d[2])+"px;top:"+(d[1]-d[2])+"px;width:"+2*d[2]+"px;height:"+2*d[2]+'px;"></v:oval>')),j.get(0).innerHTML=g+i,a(b).append(j)},f=function(b){var c=a("<div>"+b.innerHTML+"</div>");c.children("[name=highlighted]").remove(),b.innerHTML=c.html()};g=function(a){var b,c=a.getAttribute("coords").split(",");for(b=0;b<c.length;b++)c[b]=parseFloat(c[b]);return[a.getAttribute("shape").toLowerCase().substr(0,4),c]},l=function(b,c){var d=a(b);return a.extend({},c,!!a.metadata&&d.metadata(),d.data("maphilight"))},k=function(a){return!!a.complete&&("undefined"==typeof a.naturalWidth||0!==a.naturalWidth)},h={position:"absolute",left:0,top:0,padding:0,border:0};var n=!1;a.fn.maphilight=function(i){return i=a.extend({},a.fn.maphilight.defaults,i),c||n||(a(window).ready(function(){document.namespaces.add("v","urn:schemas-microsoft-com:vml");var b=document.createStyleSheet(),c=["shape","rect","oval","circ","fill","stroke","imagedata","group","textbox"];a.each(c,function(){b.addRule("v\\:"+this,"behavior: url(#default#VML); antialias:true")})}),n=!0),this.each(function(){var j,m,n,o,p,q,s;if(j=a(this),!k(this))return window.setTimeout(function(){j.maphilight(i)},200);if(n=a.extend({},i,!!a.metadata&&j.metadata(),j.data("maphilight")),s=j.get(0).getAttribute("usemap"),s&&(o=a('map[name="'+s.substr(1)+'"]'),j.is('img,input[type="image"]')&&s&&o.length>0)){if(j.hasClass("maphilighted")){var t=j.parent();j.insertBefore(t),t.remove(),a(o).unbind(".maphilight")}m=a("<div></div>").css({display:"block",backgroundImage:'url("'+this.src+'")',backgroundSize:"contain",position:"relative",padding:0,width:this.width,height:this.height}),n.wrapClass&&(n.wrapClass===!0?m.addClass(a(this).attr("class")):m.addClass(n.wrapClass)),j.before(m).css("opacity",0).css(h).remove(),b&&j.css("filter","Alpha(opacity=0)"),m.append(j),p=d(this),a(p).css(h),p.height=this.height,p.width=this.width,a(o).bind("alwaysOn.maphilight",function(){q&&f(q),c||a(p).empty(),a(o).find("area[coords]").each(function(){var b,f;f=l(this,n),f.alwaysOn&&(!q&&c&&(q=d(j[0]),a(q).css(h),q.width=j[0].width,q.height=j[0].height,j.before(q)),f.fade=f.alwaysOnFade,b=g(this),c?e(q,b[0],b[1],f,""):e(p,b[0],b[1],f,""))})}).trigger("alwaysOn.maphilight").bind("mouseover.maphilight, focus.maphilight",function(b){var d,f,h=b.target;if(f=l(h,n),!f.neverOn&&!f.alwaysOn){if(d=g(h),e(p,d[0],d[1],f,"highlighted"),f.groupBy){var i;i=/^[a-zA-Z][\-a-zA-Z]+$/.test(f.groupBy)?o.find("area["+f.groupBy+'="'+a(h).attr(f.groupBy)+'"]'):o.find(f.groupBy);var j=h;i.each(function(){if(this!=j){var a=l(this,n);if(!a.neverOn&&!a.alwaysOn){var b=g(this);e(p,b[0],b[1],a,"highlighted")}}})}c||a(p).append("<v:rect></v:rect>")}}).bind("mouseout.maphilight, blur.maphilight",function(a){f(p)}),j.before(p),j.addClass("maphilighted")}})},a.fn.maphilight.defaults={fill:!0,fillColor:"000000",fillOpacity:.2,stroke:!0,strokeColor:"ff0000",strokeOpacity:1,strokeWidth:1,fade:!0,alwaysOn:!1,neverOn:!1,groupBy:!1,wrapClass:!0,shadow:!1,shadowX:0,shadowY:0,shadowRadius:6,shadowColor:"000000",shadowOpacity:.8,shadowPosition:"outside",shadowFrom:!1}});
+</script><tw-tag name="Lieu" color="red"></tw-tag><tw-tag name="Fin" color="green"></tw-tag><tw-passagedata pid="1" name="Village" tags="" position="1700,225" size="100,100">&lt;&lt;set $lettre_prise to 0&gt;&gt;
+&lt;&lt;set $cereales to 0&gt;&gt;
+&lt;&lt;set $calin to 0&gt;&gt;
+&lt;&lt;set $first_time to 0&gt;&gt;
+&lt;&lt;set $discours_commandant to 0&gt;&gt;
+&lt;&lt;set $passage to 0&gt;&gt;
+&lt;&lt;set $inf_absente to 0&gt;&gt;
+&lt;&lt;set $trahison_incendie to 0&gt;&gt;
+&lt;&lt;set $manger to 0&gt;&gt;
+&lt;&lt;set $mort_christian to 0&gt;&gt;
+&lt;&lt;set $blessé_christian to 0&gt;&gt;
+&lt;&lt;set $mort_espagnol to 0&gt;&gt;
+&lt;&lt;set $nourri_espagnol to 0&gt;&gt;
+&lt;&lt;set $cyrano to 0&gt;&gt;
+&lt;&lt;set $dormir to 0&gt;&gt;
+&lt;&lt;set $passage_dortoir to 0&gt;&gt;
+&lt;&lt;set $dodo to 0&gt;&gt;
+&lt;&lt;set $lettre_donnée to 0&gt;&gt;
+&lt;&lt;set $réveil_cuisinier to 0&gt;&gt;
+&lt;&lt;set $lettre_amenée to 0&gt;&gt;
+&lt;&lt;set $pomme to 0&gt;&gt;
+&lt;&lt;set $refectoire_passage to 0&gt;&gt;
+&lt;&lt;set $prevenir_marechal to 0&gt;&gt;
+&lt;&lt;set $vexe_cyrano to 0&gt;&gt;
+&lt;&lt;set $couteau to 0&gt;&gt;
+&lt;&lt;set $celindra_partie to 0&gt;&gt;
+&lt;&lt;set $passage_offre to 0&gt;&gt;
+&lt;&lt;set $ligne_de_front_passage to 0&gt;&gt;
+
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+Allez, allez, il faut se réveiller ! C’est maintenant et tu le sais ! Que je suis fière de voir mon tendre époux pouvoir se battre fièrement pour notre belle région !
+
+@@#Narrator;Vous vous levez pour préparer vos affaires et manger la délicieuse tarte au concombre, spécialité de votre “tendre” épouse.@@
+
+Tu penseras à m’écrire, HEIN ? Tu oublieras pas de manger, HEIN ? Et puis n’oublie pas tes pulls, tes grosses chaussettes en laine, il fait froid la nuit sur le champ de bataille… Ahlala que je me fais du souci, on dit que l’ennemi est puissant et bien préparé. J’espère que toi aussi tu t’es bien entraîné.
+
+@@#Narrator;Bien entraîné ? Vous ? Pour traire les vaches et ramasser les patates, oui vous êtes entraîné… Mais aller au front pour affronter la terrible armée espagnole venue défendre la ville… Vous n’avez pas eu d’autre choix que de vous engager dans l’armée. Il ne vous reste qu&#39;à prier pour ne pas finir en chair à canon désormais …@@
+
+Vite vite les soldats arrivent, tu n&#39;as même pas fini ton bol de lait !! Ooooh j’ai honte hein…
+
+@@#Narrator;On entend toquer à la porte, vous vous apprêtez à partir mais ….@@
+
+QUOI ? Même pas un câlin, pas un au revoir pour moi, ta femme?
+
+@@#Narrator;Vous vous retournez et hésitez …@@
+
+
+@@#Link;[[Faire un câlin]]@@
+@@#Link;[[L&#39;embrasser]]@@
+@@#Link;[[Partir]]@@
+
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+/* ---------------------------------------------------------------------- */
+/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Village_wife&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;narration/Discussion Femme 1.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+
+</tw-passagedata><tw-passagedata pid="2" name="Réfectoire" tags="Lieu" position="925,550" size="100,100">/* Ambiant current music */
+
+/* Narration audio */
+/* Narration audio */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Refectoir.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $passage to 1&gt;&gt;
+
+
+&lt;&lt;if $lettre_amenée is 1 and $refectoire_passage != 2&gt;&gt;
+			/* Narration audio */
+            &lt;audio id=&quot;monAudio&quot; &gt;
+            &lt;source src=&quot;narration/cuisinier remercie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+            &lt;/audio&gt;
+            &lt;script&gt;
+                var audio = document.getElementById(&quot;monAudio&quot;);
+                audio.play();
+            &lt;/script&gt;
+            
+            /* Image background */
+            &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Cuisine_cuistot&#39;)&lt;/script&gt;
+            
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+            Merci jeune soldat pour ton aide !
+            @@#Narrator;Le cuisinier vous oblige à manger, comme une grand mère mais 			c’est pas très 				bon@@
+            @@#Link;[[Retourner à la carte|Carte]]@@
+            
+            &lt;&lt;set $manger to 1&gt;&gt;
+            &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+            
+ 			&lt;&lt;set $refectoire_passage to 2&gt;&gt;
+ &lt;&lt;else&gt;&gt;
+           
+	&lt;&lt;if $refectoire_passage &gt; 0 &gt;&gt;
+    	&lt;&lt;if $pomme != 1 &gt;&gt;
+             /* Image background */
+            &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Refectoire_Pomme&#39;)&lt;/script&gt;
+            
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+            @@#Narrator;Il n’y a personne ici … 
+            Vous apercevez une belle pomme rouge et luisante sur la table. La cuisine est 				déserte … 				c’est votre chance de vous mettre quelque chose sous la dent !@@
+            
+            
+            @@#Narrator;voler une pomme ce n’est rien …@@
+            @@#Link;[[Prendre la pomme]]@@
+            @@#Narrator;Ne rien prendre...@@
+            @@#Link;[[Retourner à la carte|Carte]]@@
+            &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+            
+        &lt;&lt;else&gt;&gt;
+            /* Image background */
+            &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Cuisine_cuistot&#39;)&lt;/script&gt;
+
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+             @@#Narrator;Le cuisinier est en train de préparer la soupe pour ce soir, l&#39;air 				 rêveur. Il 			 est 					probablement en train de penser à Celindra, sa 						 bien-aimée. Aussi, 				 vous ne 				voulez pas le déranger.@@
+            @@#Link;[[Retourner à la carte|Carte]]@@
+            &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+&lt;&lt;endif&gt;&gt;
+	       		 
+	&lt;&lt;else&gt;&gt;
+	  	 /* Image background */
+      	&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Refectoire&#39;)&lt;/script&gt;
+
+		&lt;&lt;set $refectoire_passage to 1&gt;&gt;
+		&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+     	 @@#Narrator;Un doux parfum embaume soudainement vos narines. 
+      	 Oui c’est sûr, vous êtes bien arrivé à la cuisine !
+      	 Cet endroit vous semble d&#39;abord bien désert… mais après s’être adaptés au 					 désordre de 		  la pièce, vos yeux distinguent un petit homme rondelet endormi 			 entre deux [[tourtes au 					 pigeon|https://www.femina.fr/recette/tourte-aux-pigeons]]. 
+     	 Serait-ce le cuisinier ? Il pourrait sûrement vous prêter quelques victuailles …@@ 
+      
+      	@@#Link;[[Le réveiller|Réveil du cuisinier]]@@ 
+      	@@#Link;[[Le laisser dormir|Cuisinier endormi]]@@
+		&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+     		&lt;&lt;endif&gt;&gt;
+   	&lt;&lt;endif&gt;&gt;
+
+
+
+</tw-passagedata><tw-passagedata pid="3" name="Dortoir" tags="Lieu" position="1200,850" size="100,100">/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $passage to 1&gt;&gt;
+
+
+&lt;&lt;if $dodo is 1&gt;&gt;
+
+            /* Image background */
+            &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Dortoir_marechal&#39;)&lt;/script&gt;
+            
+			/* Ambiant current music */
+            &lt;audio id=&quot;monAudio&quot; &gt;
+            &lt;source src=&quot;narration/dortoir.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+            &lt;/audio&gt;
+            &lt;script&gt;
+            var audio = document.getElementById(&quot;monAudio&quot;);
+            audio.play();
+            &lt;/script&gt;
+    
+    
+			&lt;&lt;set $commandant_vénère to 1&gt;&gt;
+            
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;  
+           @@#Narrator; Hmm une nouvelle petite sieste ? ça ferait du bien non ?@@
+
+           @@#BRUITAGE; “BOOM”@@
+
+            QUE FAIS TU SOLDAT ? PREPARE TOI ! TU N&#39;ES PAS VENU ICI POUR DORMIR !
+
+            @@#Narrator;Vous vous dépéchez, il ne faudrait pas l’énerver davantage !@@
+
+            @@#Link;[[Retourner à la carte|Carte]]@@
+            &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+&lt;&lt;else&gt;&gt;
+            /* Image background */
+            &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Dortoir&#39;)&lt;/script&gt;
+            
+			/* Ambiant current music */
+           &lt;audio id=&quot;monAudio&quot; &gt;
+            &lt;source src=&quot;musique/Dortoir.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+            &lt;/audio&gt;
+            &lt;script&gt;
+            var audio = document.getElementById(&quot;monAudio&quot;);
+            audio.play();
+            &lt;/script&gt;            
+            
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;           
+            @@#Narrator;Vous arrivez dans le dortoir mais pas de bruit… Les soldats se reposent … Les pauvres ils doivent être 			  fatigués à force 			de se battre…
+	    Après votre grand voyage jusqu’au front, votre envie de faire un petit somme est bien là… Mais attention, le maréchal 				   serait-il content de vous voir en train de dormir ?@@
+
+            @@#Link;[[Faire un petit rompiche]]@@
+            @@#Link;[[Retourner à la carte|Carte]]@@
+            &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;
+
+
+</tw-passagedata><tw-passagedata pid="4" name="Commandant" tags="Lieu" position="850,825" size="100,100">&lt;&lt;set $passage to 1&gt;&gt;
+
+&lt;&lt;if $discours_commandant!=1&gt;&gt;
+
+    &lt;&lt;set $discours_commandant to 1&gt;&gt;
+    
+    /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Tente_capitaine&#39;)&lt;/script&gt;
+    
+     /* Narration audio */    
+    &lt;audio id=&quot;monAudio&quot; &gt;
+    &lt;source src=&quot;narration/Commandant_Discours.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    &lt;/audio&gt;
+    &lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+    &lt;/script&gt;
+    
+    &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+    @@#Narrator;Vous avez décidé de vous rendre aux tentes des généraux car vous avez entendu dire qu&#39;une 		annonce 	importante allait être faite. 
+    Le [[Duc de Châtillon|https://fr.wikipedia.org/wiki/Gaspard_III_de_Coligny]], maréchal de France et commandant en chef 		des 		armées françaises dans la campagne de l’Artois, sort de sa tente fier comme un coq, accompagné de ses gardes et 	commence 	 un discours.@@
+
+    &quot;Mes braves, les temps sont durs, je le conçois. Les ravitaillements se font attendre et la faim se fait chaque jour plus 							pesante. Mais la victoire approche, je le sens. Les espagnols faiblissent et les murs d’Arras ne resteront pas fermés 								indéfiniment contrairement à ce qui est écrit [[sur ses murs|https://books.google.fr/books?id=PBX5AgAAQBAJ&amp;pg=PA70&amp;lpg=PA70&amp;dq=Quand+les+Fran%C3%A7ais+prendront+Arras,+les+souris+mangeront+les+chats&amp;source=bl&amp;ots=E1-ysfSPiP&amp;sig=0Mp5tlAd2SXn-VF2ETmYpL-mpgo&amp;hl=fr&amp;sa=X&amp;ved=2ahUKEwic0rTUh6zeAhVK1BoKHS6jDUUQ6AEwDHoECAIQAQ#v=onepage&amp;q=Quand%20les%20Fran%C3%A7ais%20prendront%20Arras%2C%20les%20souris%20mangeront%20les%20chats&amp;f=false]]. Bientôt notre heure sera enfin venue !
+    Mais avant cela, il nous faut repousser l’ennemi qui attaque nos arrières et tente de nous isoler. Ce matin nous allons 		lancer 		l’assaut afin d’en finir une bonne fois pour toute. Vous les fantassins, vous serez en première ligne et vous 				attaquerez de 		front pour faire sortir l’ennemi, afin qu’il soit accessible au feu de nos artilleurs.&quot;
+
+    &quot;Mais c’est du suicide ! » souffle votre voisin. @@#Narrator;Des bruits de mécontentement se font entendre.@@
+    @@#Narrator;Le maréchal continue : @@ &quot; La mission n’est pas sans danger, mais ceux qui doivent mourir mourront 		pleins 		de gloire pour la France, et c’est là la meilleure mort que je puisse vous souhaiter ! &quot;
+
+    @@#Narrator;Les désapprobations s’atténuent petit à petit. Au fond, si vous êtes ici, c’est pour vous battre… @@
+
+    @@#Link;[[Suite|Suite couteau]]@@
+	&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+    
+&lt;&lt;else&gt;&gt;
+
+	&lt;&lt;if $mort_christian is 1 and $prevenir_marechal is 0&gt;&gt;
+    
+         /* Image background */
+    	&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Tente&#39;)&lt;/script&gt;
+        
+         /* Ambiant music */ 
+        &lt;audio id=&quot;monAudio&quot; &gt;
+        &lt;source src=&quot;musique/Commandant.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;   
+        
+    	&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+		@@#Narrator;Vous entendez le maréchal marmonner dans sa tente@@
+        
+		@@#Link;[[Prévenir le maréchal]]@@
+		@@#Link;[[Ne rien dire et retourner à la carte|Carte]]@@
+        
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+        
+  	&lt;&lt;elseif $mort_christian is 1&gt;&gt;
+    
+         /* Image background */
+    	&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Tente&#39;)&lt;/script&gt;
+        
+         /* Ambiant music */ 
+        &lt;audio id=&quot;monAudio&quot; &gt;
+        &lt;source src=&quot;musique/Commandant.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;   
+        
+    	&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+		@@#Link;[[Allez aider les soldats sur le champ de bataille|Champ de Bataille-bis]]@@
+		@@#Link;[[Ne rien dire et retourner à la carte|Carte]]@@
+        
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;      
+   &lt;&lt;else&gt;&gt;
+   
+         /* Image background */
+    	&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Tente_capitaine&#39;)&lt;/script&gt;
+        
+         /* Ambiant music */
+        &lt;audio id=&quot;monAudio&quot; &gt;
+        &lt;source src=&quot;musique/Commandant.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;  
+        
+   		&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+        @@#Narrator;Il n&#39;y a rien à faire ici@@
+        @@#Link;[[Retourner à la carte|Carte]]@@
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+   &lt;&lt;endif&gt;&gt;
+
+        
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Armurerie" tags="Lieu" position="1550,900" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Armurerie&#39;)&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $passage_Armurerie to 1&gt;&gt;
+&lt;&lt;set $passage to 1&gt;&gt;
+
+&lt;&lt;if $trahison_incendie is 1 and $lettre_prise is 1 and $lettre_amenée is 0&gt;&gt;
+         /* Narration audio */
+        &lt;audio id=&quot;monAudio&quot; &gt;
+        &lt;source src=&quot;musique/Armurerie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;  
+        
+        &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;        
+        @@#Narrator;Vous entrez dans l’armurerie en faisant bien attention de ne pas vous faire repérer. 			Vous êtes tellement 						nerveux et regardez partout.@@
+        
+        @@#Link;[[Chercher Celindra pour lui donner la lettre|Lettre Celindra]]@@         
+        @@#Link;[[Mettre le feu|Incendie]]@@
+        
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+        
+&lt;&lt;elseif $trahison_incendie is 1&gt;&gt;
+        /* Narration audio */
+        &lt;audio id=&quot;monAudio&quot; &gt;
+        &lt;source src=&quot;musique/Armurerie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;  
+        
+        &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+              
+        @@#Narrator;Vous entrez dans l’armurerie en faisant bien attention de ne pas vous faire repérer. 			Vous êtes tellement 						nerveux et regardez partout, que vous ne remarquez pas cette 			caisse qui traine au milieu du passage. Vous vous 									effondrez 	de tout votre poids 		sur le sol, dans un grand fracas.@@
+        
+      
+        @@#Link;[[Mettre le feu|Incendie]]@@
+        
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+        
+&lt;&lt;else&gt;&gt;
+	&lt;&lt;if $lettre_prise is 0&gt;&gt;
+    
+            /* Narration audio */
+            &lt;audio id=&quot;monAudio&quot; &gt;
+            &lt;source src=&quot;narration/Celindra.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+            &lt;/audio&gt;
+            &lt;script&gt;
+            var audio = document.getElementById(&quot;monAudio&quot;);
+            audio.play();
+            &lt;/script&gt;  
+			&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Armurerie_felindra&#39;)&lt;/script&gt;                
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+            @@#Narrator;L’armurerie est immense !  Vous n’auriez jamais dû mettre les pieds ici, si quelqu’un voyait un gueux 							tel 		  que vous dans cet endroit, ce serait une catastrophe…@@ 
+
+            &quot;HE TOI !&quot; Qu’est-ce que tu fais là ?
+            @@#Narrator;Une main s&#39;abat sur votre épaule, vous êtes pris au piège et ne pouvez faire demi-tour 
+            Vous tentez de vous retourner avant que cette main ne vous brise le cou. En regardant vos pieds, vous osez 										demander 		à cette ombre intimidante si Celindra est dans les parages.@@ 
+
+            Tu cherches Celindra morveux ? Tu penses vraiment que la maître d’arme  de cette bataille a du 		  temps 			à 				t’accorder ?
+
+            @@#Narrator;Vous faites demi tour, ça n’en vaut vraiment pas la peine …@@
+            @@#Link;[[Retourner à la carte|Carte]]@@
+            &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+            
+	&lt;&lt;elseif $lettre_prise is 1 and $lettre_amenée is 0&gt;&gt;
+    
+            /* Narration audio */
+            &lt;audio id=&quot;monAudio&quot; &gt;
+            &lt;source src=&quot;narration/Celindra.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+            &lt;/audio&gt;
+            &lt;script&gt;
+            var audio = document.getElementById(&quot;monAudio&quot;);
+            audio.play();
+            &lt;/script&gt;  
+			&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Armurerie_felindra&#39;)&lt;/script&gt;            
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+            @@#Narrator;L’armurerie est immense !  Vous n’auriez jamais dû mettre les pieds ici, si quelqu’un voyait un gueux 							tel 		  que vous dans cet endroit, ce serait une catastrophe…@@ 
+
+            “HE TOI ! Qu’est-ce que tu fais là ?”
+            @@#Narrator;Une main s&#39;abat sur votre épaule, vous êtes pris au piège et ne pouvez faire demi-tour 
+            Vous tentez de vous retourner avant que cette main ne vous brise le cou. En regardant vos pieds, vous osez 										demander 		à cette ombre intimidante si Celindra est dans les parages.@@ 
+
+            Tu cherches Celindra morveux ? Tu penses vraiment que la maître d’arme de cette bataille a du 		  temps 			à 				t’accorder ?
+            
+            @@#Narrator;Vous lui parlez de la lettre du cuisinier@@
+            @@#Link;[[Donnez la lettre à Celindra|Lettre Celindra]]@@
+            @@#Narrator;Vous faites demi tour, ça n’en vaut vraiment pas la peine …@@
+            @@#Link;[[Retourner à la carte|Carte]]@@
+
+            &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+			
+	&lt;&lt;elseif $lettre_prise is 1 and $lettre_amenée is 1&gt;&gt;
+
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+		
+            @@#Narrator;Vous n&#39;avez rien à faire ici pour le moment.@@ 
+
+            @@#Narrator;Vous faites demi tour, ça n’en vaut vraiment pas la peine …@@
+            @@#Link;[[Retourner à la carte|Carte]]@@
+            &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+            
+    
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
+
+
+
+
+    </tw-passagedata><tw-passagedata pid="6" name="Champ de Bataille" tags="Lieu" position="1950,900" size="100,100">&lt;&lt;if $passage is  0&gt;&gt;
+
+      /* Image background */
+      &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille&#39;)&lt;/script&gt;
+      /* Ambiant current music */
+      &lt;audio id=&quot;monAudio&quot; &gt;
+      &lt;source src=&quot;musique/Champ de bataille.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+      &lt;/audio&gt;
+      &lt;script&gt;
+      var audio = document.getElementById(&quot;monAudio&quot;);
+      audio.play();
+      &lt;/script&gt;  
+      
+	  &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+      @@#Narrator; Il ne faut pas être aussi pressé…@@
+      @@#Link;[[Vous mourrez...|Fin Mort Rapide]]@@
+      &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+	
+&lt;&lt;else&gt;&gt;
+    
+    &lt;&lt;if $mort_christian is 0&gt;&gt;
+    
+        /* Image background */
+        &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_soldat&#39;)&lt;/script&gt;
+        /* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot;&gt;
+        &lt;source src=&quot;narration/mort_christian.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;  
+        
+    	&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+        @@#Narrator;Vous arrivez sur le champ de bataille… À perte de vue, des corps… Vous marchez depuis tellement 								longtemps que 				vous 		êtes perdu dans vos pensées … Tellement perdu que vous venez de marcher sur la 							chaussure de votre voisin 		de devant.
+
+        Plein de soldats courent vers le champ de bataille, certains crient :@@
+
+        Vite, allons aider [[Sire Christian|https://www.facebook.com/christian.deneuvillette.35/]], il est parti seul arme à la main !
+
+        @@#Narrator;Vous suivez la troupe, arrivez devant un soldat se battant avec force et rage@@
+
+        Sire Christian c’est du suicide ! Il faut revenir vite, nous avons besoin de vous.
+
+        Non laissez moi… Plus rien de ne compte pour moi… Pourquoi Jeanne… POURQUOI !!!
+
+        @@#BRUITAGE;BOOM@@
+
+        @@#Narrator;Vous voyez Christian s&#39;effondrer à terre.
+
+        Tous les soldats prennent son corps et battent en retraite…@@
+
+        Vite il faut aller chercher l’infirmère, on peut encore l’aider ! Toi le nouveau dépêche-toi, le temps est compté
+
+        @@#Narrator;Vous courrez le plus vite possible voir l&#39;infirmière.@@ 
+
+    	&lt;&lt;set $blessé_christian to 1&gt;&gt;
+        @@#Link;[[Aller chercher de l’aide|Infirmerie]]@@
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+        
+    &lt;&lt;else&gt;&gt;
+            
+            /* Image background */
+            &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille&#39;)&lt;/script&gt;
+            /* Ambiant current music */
+            &lt;audio id=&quot;monAudio&quot;&gt;
+            &lt;source src=&quot;musique/Champ de bataille.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+            &lt;/audio&gt;
+            &lt;script&gt;
+            var audio = document.getElementById(&quot;monAudio&quot;);
+            audio.play();
+            &lt;/script&gt;  
+            
+            &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+    		@@#Narrator;Vous arrivez sur le champ de bataille… Les soldats français sont galvanisés, ils veulent tous venger la 							mort de 					Christian !@@
+
+    		@@#Link;[[Suite|Champ de Bataille-bis]]@@
+   			&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+       &lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
+		
+
+
+</tw-passagedata><tw-passagedata pid="7" name="Ligne de front" tags="Lieu" position="2550,775" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_cyrano&#39;)&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $cyrano to 1&gt;&gt;
+&lt;&lt;set $passage to 1&gt;&gt;
+
+&lt;&lt;if $ligne_de_front_passage is 0&gt;&gt;
+
+	/* Image background */
+	&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_cyrano&#39;)&lt;/script&gt;
+    
+	/* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot;&gt;
+        &lt;source src=&quot;narration/Cyrano début.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;
+    
+	&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+	@@#Narrator;La ligne de front est sinistre et terne… Les soldats paraissent tous plus apeurés les uns que les autres. Mais 		au milieu de cette débâcle, un géant à la démarche majestueuse et la tête coiffée d’un magnifique chapeau s’approche 	  de vous. @@
+
+    Oh doux soldat
+    Est-ce vous qui venez au combat ?
+    Les ennemis ne sont pas très loin 
+    Vite prenez ce casque dans le coin
+
+    @@#Narrator;Vous n&#39;en croyez pas vos yeux… Et oui c’est bien lui, [[Cyrano de Bergerac|https://fr.wikipedia.org/wiki/Cyrano_de_Bergerac_(Rostand)]] !!! Ce grand poète et combattant 	 que vous admirez tant est  juste devant vous@@
+
+    Alors soldat, que se passe-t-il ?
+    Est-ce ma venue qui vous rend si fébrile?
+
+    @@#Narrator;Quelque chose vous intrigue, vous voyez une tache de boue sur son nez.. Cette tâche pourrait glisser 		sur son visage et le peiner dans la bataille, il faudrait le prévenir, non ?@@
+
+	@@#Link;[[Lui faire remarquer qu&#39;il a un grand nez|Gros Nez]]@@
+	@@#Link;[[Vous ne dites rien, ce serait impoli|Nez normal]]@@
+    &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+&lt;&lt;elseif $vexe_cyrano is 0&gt;&gt; 
+	
+    /* Image background */
+	&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Ligne_de_front&#39;)&lt;/script&gt;
+
+    /* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot;&gt;
+        &lt;source src=&quot;musique/ligne de front.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;
+    
+    &lt;&lt;if $mort_espagnol is 1&gt;&gt;
+        &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+        @@#Narrator;Rien de nouveau par ici@@
+        @@#Link;[[Retourner à la carte|Carte]]@@
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+    &lt;&lt;else&gt;&gt;
+        &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+        @@#Narrator;Vous voyez une étrange silhouette attachée à un poteau… Qui est cet homme?@@
+        @@#Link;[[Se rapprocher|Espagnol cage]]@@
+        @@#Link;[[Retourner à la carte|Carte]]@@
+
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;    	
+    &lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="8" name="Infirmerie" tags="Lieu" position="2950,700" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Infirmerie_infirm&#39;)&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $passage to 1&gt;&gt;
+
+&lt;&lt;if $blessé_christian is 1 and $prevenir_marechal is 0 and $mort_christian is 0&gt;&gt;
+
+		/* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot;&gt;
+        &lt;source src=&quot;musique/Infirmerie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;
+        
+        &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+        @@#Narrator;Vous arrivez à l&#39;entrée de l&#39;infirmerie, des cris et gémissements se font entendre. L&#39;infirmière est en train 		  de soigner les blessés, et certains sont dans un sale état...@@
+
+        @@#Link;[[Demander de l’aide|Mort Christian]]@@
+        @@#Link;[[Retourner à la carte|Carte]]@@
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+        
+ &lt;&lt;elseif $mort_christian is 0&gt;&gt;
+ 
+		/* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot;&gt;
+        &lt;source src=&quot;narration/Infirmérie début.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;
+        
+        
+        &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+ 		Bonjour soldat ! Je me présente, je suis l’infirmière de la bataille, les bobos c’est pour moi ! Tu te sens 			bien ?
+        
+		@@#Link;[[Oui|Ne pas boire]]@@
+ 		@@#Link;[[Non|Boire]]@@
+        @@#Link;[[Retourner à la carte|Carte]]@@
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+&lt;&lt;else&gt;&gt;
+		/* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot;&gt;
+        &lt;source src=&quot;narration/mort_christian.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;
+        
+        &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+ 		C’est terrible pour lui… Il était si jeune…si beau…
+        @@#Link;[[Retourner à la carte|Carte]]@@
+        &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Prévenir le maréchal" tags="" position="875,1275" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Tente_capitaine&#39;)&lt;/script&gt;
+
+&lt;&lt;set $prevenir_marechal to 1&gt;&gt;
+
+/* Narration audio */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;narration/Commandant_Mort_Christian.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;  
+
+&lt;&lt;if $trahison_incendie is 1&gt;&gt;
+
+    &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+    @@#Narrator;Vous expliquez au Maréchal que vous êtes missioné pour le prévenir de la mort de Christian@@
+
+    Comment ?! Christian est mort !! Mais c&#39;est une véritable tragédie, c&#39;était l&#39;un de nos meilleurs hommes. Vite, je dois me rendre sur 	le champ de bataille !
+
+    @@#Narrator;Il s&#39;en va et vous laisse en plan devant sa tente.
+    A cause de la mort de Christian, tout le monde est parti. Si vous souhaitez toujours mettre le feu à l&#39;armurerie et 		déserter, 			c&#39;est probablement le moment opportun, d&#39;autant  que la maître d&#39;arme doit être partie pour renforcer les troupes. 	 Ou 			bien, vous préférez peut-être aller combattre sur le champ de bataille pour venger sa mort@@
+	
+    @@#Link;[[Allez aider les soldats sur le champ de bataille|Champ de Bataille-bis]]@@
+    @@#Link;[[Retourner à la carte|Carte]]@@
+	&lt;&lt;set $celindra_partie to 1&gt;&gt;
+    
+    &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+    
+&lt;&lt;else&gt;&gt;
+	&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+      @@#Narrator;Vous expliquez au Maréchal que vous êtes missioné pour le prévenir de la mort de Christian@@
+
+    Comment ?! Christian est mort !! Mais c&#39;est une véritable tragédie, c&#39;était l&#39;un de nos meilleurs hommes. Vite, il faut que j&#39;aille sur 	le champ de bataille !
+
+    @@#Narrator;Il s&#39;en va et vous laisse en plan devant sa tente.
+	Tout le monde est parti au champ de bataille pour venger la mort de Christian. Il serait peut-être temps de se 				joindre à 			eux.@@   
+    
+    @@#Link;[[Allez aider les soldats sur le champ de bataille|Champ de Bataille-bis]]@@
+    @@#Link;[[Retourner à la carte|Carte]]@@
+
+    &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Faire un câlin" tags="" position="1850,400" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Village_wife&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Village.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Le câlin lui fait du bien, vous partez avec votre femme émue qui espère vous revoir vite@@
+
+&lt;&lt;set  $calin to 1&gt;&gt;
+&lt;&lt;set  $cereales to 0&gt;&gt;
+
+@@#Link;[[Aller à la guerre|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="L&#39;embrasser" tags="" position="1700,400" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Village_wife&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Village.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Votre femme est au bord des larmes, elle glisse quelques céréales dans votre poche. Parfait pour tenir la forme !@@
+
+&lt;&lt;set  $cereales to 1&gt;&gt;
+&lt;&lt;set  $calin to 1&gt;&gt;
+
+@@#Link;[[Aller à la guerre|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Partir" tags="" position="1550,400" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Village_wife&#39;)&lt;/script&gt;
+
+/* Narration audio */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;narration/femme_début_venere.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+&quot;ESPÈCE DE SALE POURRITURE INGRATE, SI TU MEURS PAS LA BAS C’EST MOI QUI VAIS TE TUER !!!!!”
+
+@@#Narrator;Vous la reconnaissez mieux ainsi ! Vous fuyez vers la porte. Face à sa colère, le champ de bataille vous semble presque attirant.@@
+
+&lt;&lt;set  $cereales to 0&gt;&gt;
+&lt;&lt;set  $calin to 0&gt;&gt;
+@@#Link;[[Aller à la guerre|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="INTRO" tags="" position="1700,75" size="100,100">&lt;&lt;cacheaudio Intro &quot;musique/Intro.mp3&quot;&gt;&gt;
+&lt;&lt;audio Intro play&gt;&gt;
+/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Intro&#39;)&lt;/script&gt;
+
+
+/* ---------------------------------------------------------------------- */
+
+
+&lt;div class=&quot;text_intro&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+Bienvenue dans notre récit interactif : « Le Gueux d’Arras ».
+Votre aventure commence en juin 1640, vous allez incarner un personnage un peu simple, un campagnard peu évolué, bref… un gueux qui a été appelé pour renforcer les troupes françaises au cours du siège d’Arras.
+En effet, ce conflit a lieu dans le contexte de la guerre de Trente Ans  (1618-1648) opposant de nombreux royaumes européens, d’un côté les Habsbourg d’Espagne et du Saint-Empire Romain Germanique et de l’autre les États allemands protestants, auxquels étaient alliées les Provinces-Unies, les pays scandinaves, ainsi que la France.
+Louis XIII lance une campagne de reconquête des provinces du Nord et notamment la ville d’Arras, dont le siège s’est déroulé du 13 juin au 9 août 1640 et s’est terminé par une victoire française. Suite à la prise d’Arras, d’autres places fortes du Nord ont été reconquises, permettant l’avancée des troupes françaises. C&#39;est ainsi que a France sera la grande gagnante de la Guerre de Trente Ans.
+Cependant, cela n’est qu’une version de l’Histoire. Peut-être que Votre histoire et Vos décisions auront un impact significatif sur l’issue du siège. Vous aurez l’occasion d’aider les Français, mais aussi de les trahir. 
+Où vous mèneront vos choix ? Serez vous à la hauteur de cette mission?  L’histoire nous le dira…
+
+
+@@#BRUITAGE;Pour afficher l&#39;ensemble du texte sans attendre, vous pouvez appuyer sur la touche TAB@@
+
+@@#Link;[[Jouer|Village]]@@
+
+Crédits : 
+Serge Bouchardon pour son accompagnement et sa pédagogie 
+Midjourney pour sa grande intelligence (artificielle) 
+Edmond Rostand pour son personnage de Cyrano 
+Charles Aznavour pour sa carrière 
+
+Source des images : Gallica - Bnf carte du siège d’Arras, MidJourney. 
+
+Un récit imaginé par Thomas BORDES, Lisa FAVARETTO, Etienne MORAMBERT, Jacques SICARD et Antoine SOMMIER
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Intro.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+</tw-passagedata><tw-passagedata pid="14" name="Carte" tags="" position="1700,700" size="100,100">
+&lt;&lt;script&gt;&gt;
+
+// Apply maphilight to all images that have a usemap attribute, e.g.
+// all the maps that are in this twine. This sets the default styling
+// for all the maps. These are all the possible styling options.
+// Note: for picking colors, check out http://hslpicker.com/. You can
+// copy the HEX value as long as you leave off the &quot;#&quot;.
+$(&quot;img[usemap]&quot;).maphilight({
+  fill: true,             	// Fill the area?
+  fillColor: &#39;dd319b&#39;,    	// HEX format without the starting &quot;#&quot;
+  fillOpacity: 0.5,       	// Opacity of the filled area
+  stroke: true,           	// Outline the area?
+  strokeColor: &#39;ef9ace&#39;,
+  strokeOpacity: 1,
+  strokeWidth: 3,			// Outline width
+  fade: true,             	// Animate when hovered with a fade?
+  alwaysOn: false,        	// Always show the areas?
+  neverOn: false,
+  groupBy: false,
+  wrapClass: true,
+  shadow: false,
+  shadowX: 0,
+  shadowY: 0,
+  shadowRadius: 6,
+  shadowColor: &#39;000000&#39;,
+  shadowOpacity: 0.8,
+  shadowPosition: &#39;outside&#39;,
+  shadowFrom: false
+});
+
+&lt;&lt;/script&gt;&gt;
+
+&lt;&lt;set  $first_time to 1&gt;&gt;
+
+&lt;Carte&gt;
+&lt;img src=&quot;Images/Carte/arras-cartefull.jpg&quot; usemap=&quot;#image-map&quot;&gt;
+&lt;/Carte&gt;
+
+
+&lt;map name=&quot;image-map&quot;&gt;
+
+    &lt;area 
+    data-passage = &quot;Infirmerie&quot; 
+    alt=&quot;Infirmerie&quot; 
+    title=&quot;Infirmerie&quot;  
+    coords=&quot;141,358,313,436&quot; 
+    shape=&quot;rect&quot;&gt;
+    &lt;area 
+    data-passage = &quot;Personnages1&quot; 
+    alt=&quot;Personnages&quot; 
+    title=&quot;Personnages&quot;  
+    coords=&quot;24,20,176,100&quot;    
+    shape=&quot;rect&quot;&gt;
+    &lt;area  
+    data-passage = &quot;Dortoir&quot; 
+    alt=&quot;Dortoir&quot; 
+    title=&quot;Dortoir&quot;  
+    coords=&quot;54,459,227,543&quot; 
+    shape=&quot;rect&quot;&gt;
+    &lt;area 
+    data-passage = &quot;Réfectoire&quot; 
+    alt=&quot;Refectoire&quot; 
+    title=&quot;Refectoire&quot; 
+    coords=&quot;155,681,326,763&quot;
+    shape=&quot;rect&quot;&gt;
+    &lt;area  
+    data-passage = &quot;Ligne de front&quot;
+    alt=&quot;Ligne de front&quot; 
+    title=&quot;Ligne de front&quot; 
+    coords=&quot;1021,658,1274,745&quot;
+    shape=&quot;rect&quot;&gt;
+    &lt;area  
+    data-passage = &quot;Champ de Bataille&quot; 
+    alt=&quot;Champ de bataille&quot; 
+    title=&quot;Champ de bataille&quot; 
+    coords=&quot;1055,531,1325,621&quot; 
+    shape=&quot;rect&quot;&gt;
+    &lt;area  
+    data-passage = &quot;Armurerie&quot; 
+    alt=&quot;Armurerie&quot; 
+    title=&quot;Armurerie&quot; 
+    coords=&quot;1057,93,1260,178&quot; 
+    shape=&quot;rect&quot;&gt;
+    &lt;area  
+    data-passage = &quot;Commandant&quot; 
+    alt=&quot;Commanderie&quot; 
+    title=&quot;Commanderie&quot;  
+    coords=&quot;822,146,1049,235&quot; 
+    shape=&quot;rect&quot;&gt;
+&lt;/map&gt;
+
+
+/* ------------------------------------------------------------------------*/
+
+ /* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Parchemin&#39;)&lt;/script&gt;
+
+</tw-passagedata><tw-passagedata pid="15" name="Prendre la lettre" tags="" position="350,900" size="100,100">/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Refectoir.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+
+/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Cuisinier_lettre&#39;)&lt;/script&gt;
+      
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Vous venez de prendre la lettre. Vous pouvez vous rendre à l&#39;armurerie pour la remettre à Celindra.@@
+
+&lt;&lt;set $lettre_prise to 1&gt;&gt;
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Prendre la pomme" tags="" position="275,650" size="100,100">/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Refectoir.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Refectoire&#39;)&lt;/script&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+Vous empochez la pomme et sortez discrêtement de la cuisine.
+
+
+&lt;&lt;set $pomme to 1&gt;&gt;
+@@#Link;[[Retourner à la carte|Carte]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Mort Christian" tags="" position="3050,1125" size="100,100">&lt;&lt;set $inf_absente to 1&gt;&gt;
+&lt;&lt;set $mort_christian to 1&gt;&gt;
+/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Infirmerie_infirm&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/Infirmerie Chritian mort.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+OH MON DIEU, VITE AMENEZ-LE ICI ! IL FAUT L’AIDER ET EN VITESSE !
+
+@@#Narrator;Vous vous absentez puis revenez avec le corps de Christian.@@
+
+Restez avec moi, vous allez m’aider ! 
+
+@@#Narrator;Vous aidez l’infirmière à le poser sur le lit. Elle examine la blessure.@@
+
+Son torse est touché… Une balle est logée en plein milieu de sa cage thoracique… Je ne peux rien faire… 
+
+@@#Narrator;Elle s’approche de son coeur.@@
+
+Il est mort, prévenez le machéral.
+
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="18" name="Fin Mort Rapide" tags="Fin" position="2525,1950" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Champ de bataille.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+&lt;div class=&quot;text_intro&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Vous êtes allé sur le champ de bataille pile au moment du tour de garde du meilleur tireur espagnol…
+
+Mourir aussi tôt c’est dommage, on [[réessaie|Village]] ?
+
+
+Ou bien, si vous en avez assez de jouer le rôle d&#39;un gueux, vous pouvez [Quitter|Exit]].@@
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Fin Capturé au village" tags="Fin" position="1075,1775" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Village&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Village.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+&lt;div class=&quot;text_intro&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Le soir même, on vous mène sur un échafaud. Tout le camp vous toise d&#39;un air de dégoût. Certains vous jettent même des fruits à la figure en guise d&#39;humiliation. 
+
+Enfin, vous n&#39;avez pas le temps de philosopher plus encore, puisque le bourreau vous passe la corde au cou et vous finissez pendu sous les huées de tous.
+
+Comme mort on a connu mieux... Avec un peu de chance si vous [[réessayez|Village]], peut-être que vous survivrez jusqu&#39;au bout cette fois.
+
+
+Ou bien, si vous en avez assez de jouer le rôle d&#39;un gueux, vous pouvez [[Quitter|Exit]].@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Arras" tags="" position="2075,1575" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Arras_nuit_espagnol&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Village.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Vous décidez de trahir votre patrie et de rejoindre le camp espagnol pour sauver votre peau. Après avoir détaché l’Espagnol, vous l’aidez à se relever. Il boite à cause de sa blessure donc vous placez son bras sur vos épaules pour le soutenir. 
+
+Le tumulte de la ligne de front vous permet de passer inaperçu. Vous quittez les lignes françaises, guidé par l’Espagnol qui connaît tous les raccourcis pour se rendre à Arras. Après une bonne heure et à force de discrétion, de précaution et de persévérance, vous parvenez enfin aux lignes espagnoles. Vous avez bénéficié de la brume pour avancer sans vous faire remarquer. Une fois devant les portes d’Arras, celles-ci s’ouvrent lentement et vous pénétrez à l’intérieur de la ville.
+
+Une fois entrés, des gardes se saisissent de vous ! Vous ne comprenez pas ce qui vous arrive, mais vraisemblablement les Espagnols ne vous font pas confiance. Le soldat que vous avez sauvé prend la parole en espagnol si bien que vous ne saisissez pas un mot de la conversation, même si vous avez l’impression qu’il prend votre défense.@@
+
+
+&lt;&lt;if $couteau is 1&gt;&gt;
+		@@#Link;[[Suite...|Mort Capturé Arras]]@@
+&lt;&lt;else&gt;&gt;
+		@@#Link;[[Suite...|Fin Heureuse Traitre]]@@
+&lt;&lt;endif&gt;&gt;
+ 
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Mort Capturé Arras" tags="" position="1925,2000" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Arras_nuit_colonel&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/colonel_sicouteautueaArras.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Les gardes procèdent à une fouille peu délicate, lorsque l’un d’eux met la main sur le couteau du maréchal que vous gardiez précieusement sous votre veste. Le garde le tend ensuite à ce qui vous semble être leur chef (probablement le fameux [[colonel O’Neill|https://fr.wikipedia.org/wiki/Owen_Roe_O%27Neill]]).
+Il prend délicatement l’objet entre ses mains et l’examine minutieusement avant de s’adresser à vous, en français.@@
+
+Alors comme ça vous possédez le couteau du maréchal de Châtillon ? J’ai reconnu ses armoiries gravées sur le manche. Et vous dites vouloir trahir l’armée française ? Je crois plutôt que c’est nous que vous essayez de duper en vous infiltrant dans nos lignes. Sinon, je vois mal comment vous avez pu entrer en possession d’un tel objet. C’est bien vrai qu’une telle lame a été d’une grande utilité pour ôter la vie de l’un d’entre nous, si ce n’est [[Ferdinand d’Autriche|https://fr.wikipedia.org/wiki/Ferdinand_d%27Autriche_(1609-1641)]] lui-même.
+
+@@#Narrator;Vous comprenez alors que le colonel vous prend pour un espion, voire un assassin.@@
+
+Désolé l&#39;espion, mais en temps de guerre on ne fait pas de quartier.
+
+@@#Narrator;Puis, aux gardes il s’exclame :@@
+
+Mátalo ! 
+
+@@#Link;[[Suite|Fin Mort Capturé Arras]]@@
+
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Fin Heureuse Traitre" tags="" position="1775,2000" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Arras_nuit_colonel&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/colonel_trahison.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Les gardes procèdent à une fouille peu délicate, mais ne trouvent rien sur vous qui puisse les inquiéter. Ils se tournent ensuite vers un colonel (probablement le fameux [[colonel O’Neill|https://fr.wikipedia.org/wiki/Owen_Roe_O%27Neill]]) en  hochant de la tête.@@
+
+Alors, vous avez décidé de nous offrir vos services. Je ne demande qu’à vous écouter !
+
+@@#Narrator;Vous livrez alors le plan du Maréchal de Châtillon qui consite à attaquer les Espagnols par surprise, ainsi que de l’état des troupes françaises. Une fois que vous avez terminé, le colonel semble être satisfait.@@
+
+@@#Narrator;Il vous remercie pour ces informations précieuses et vous garantit que vous ne serez pas considéré comme un ennemi. 
+
+Quelques jours plus tard, l’attaque du Maréchal de Châtillon est un véritable fiasco, les Espagnols ayant anticipé les déplacements des troupes. Cette nouvelle défaite sonne le glas des espoirs français. Les troupes de Louis XIII sont contraintes de battre en retraite et d’abandonner le siège une bonne fois pour toutes. Arras restera espagnole encore quelques décennies.@@
+
+@@#Link;[[Rentrer à la maison]]@@
+
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Couteau pris" tags="" position="325,1325" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Tente_capitaine_couteau&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Commandant.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;  
+
+
+
+&lt;&lt;set $couteau to 1&gt;&gt; 
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Vous vous approchez discrètement et ramassez le couteau du maréchal que vous glissez sous votre cape. Parfait pour se couper une rondelle de saucisson ! Et puis, après ce que vient de dire le maréchal, vous pouvez bien vous permettre ce petit larcin.@@
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Couteau pas pris" tags="" position="475,1325" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Tente&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Commandant.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;  
+
+&lt;&lt;set $couteau to 0&gt;&gt; 
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;En observant bien cette pièce de collection, vous vous dites que le maréchal n’a pas très bon goût en matière de couteau. Mais en réalité, c’est probablement par peur de vous attirer des ennuis que vous renoncez à le ramasser…@@
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Incendie" tags="" position="1400,1150" size="100,100">
+&lt;&lt;if $prevenir_marechal is 1 and $lettre_amenée is 1&gt;&gt;
+
+      /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Armurerie&#39;)&lt;/script&gt;
+    /* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot; &gt;
+        &lt;source src=&quot;musique/Armurerie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;  
+    
+	&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+    @@#Narrator;Heureusement pour vous, personne n’est dans les parages.
+    Vous vous saisissez d’une torche laissée allumée dans le fond de l’armurerie. Celindra a dû oublier de 				l’éteindre à cause de 	  son départ précipité. Vous vous dirigez vers la réserve de poudre à canon et  y mettez le feu. 		Prenant alors 	       vos jambes à votre cou, vous courrez le plus vite que possible vers la forêt et vous  arrêtez seulement lorsque 		vous entendez un     grand “BOUM !!” et des cris venant du camp. L’armurerie à explosé.@@
+
+    @@#Link;[[Suite|Fin désertion]]@@
+	&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+    
+&lt;&lt;elseif $prevenir_marechal is 0 and $lettre_amenée is 1&gt;&gt;
+    
+     /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Armurerie_marechal&#39;)&lt;/script&gt;
+    /* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot; &gt;
+        &lt;source src=&quot;narration/Commandant_Armurerie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;  
+    
+    &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+    @@#Narrator;Heureusement pour vous, personne n’est dans les parages.
+    Vous vous saisissez d’une torche laissée allumée dans le fond de l’armurerie. Celindra a dû oublier de 				l’éteindre à cause de 	  son départ précipité. Vous vous dirigez vers la réserve de poudre à canon et  y mettez le feu. 		Prenant alors 	       vos jambes à votre cou, vous courrez le plus vite que possible vers la forêt et vous  arrêtez seulement lorsque 		vous entendez un     grand “BOUM !!” et des cris venant du camp. L’armurerie à explosé.@@
+    @@#Narrator;Vous vous relevez péniblement, quand soudain quelqu’un entre !  C’est le maréchal Châtillon ! Lorsqu’il vous 				aperçoit, il s’exclame.@@
+
+    “Comment, lâche ?! Tu te caches alors que les vrais hommes se battent pour sauver Christian ?! A moins que tu ne sois qu’un 			gredin qui profite de l’absence de la maître d’arme pour effectuer tes larcins !&quot;
+    &quot;Dans tous les cas, les hommes, devrait-je dire les vermines dans ton genre ne méritent rien de mieux que l’échafaud. Emmenez-le 	 !”
+    @@#Narrator;Des gardes se pressent à l’intérieur et se saisissent de vous. @@
+
+    @@#Link;[[Suite|Fin Capturé au village]]@@
+    &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+    
+&lt;&lt;else&gt;&gt;
+    
+     /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Armurerie_felindra&#39;)&lt;/script&gt;
+    /* Ambiant current music */
+        &lt;audio id=&quot;monAudio&quot; &gt;
+        &lt;source src=&quot;musique/Armurerie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+        &lt;/audio&gt;
+        &lt;script&gt;
+        var audio = document.getElementById(&quot;monAudio&quot;);
+        audio.play();
+        &lt;/script&gt;  
+    
+    &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+    @@#Narrator;Heureusement pour vous, personne n’est dans les parages.
+    Vous vous saisissez d’une torche laissée allumée dans le fond de l’armurerie. Celindra a dû oublier de 				l’éteindre à cause de 	  son départ précipité. Vous vous dirigez vers la réserve de poudre à canon et  y mettez le feu. 		Prenant alors 	       vos jambes à votre cou, vous courrez le plus vite que possible vers la forêt et vous  arrêtez seulement lorsque 		vous entendez un     grand “BOUM !!” et des cris venant du camp. L’armurerie à explosé.@@
+    @@#Narrator;Vous vous relevez péniblement, quand soudain quelqu’un entre !  C’est Celindra.@@
+    
+    @@#Narrator;Des gardes se pressent à l’intérieur et se saisissent de vous. @@
+
+    @@#Link;[[Suite|Fin Capturé au village]]@@
+    &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+&lt;&lt;endif&gt;&gt;
+</tw-passagedata><tw-passagedata pid="26" name="Fin désertion" tags="" position="1350,1775" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Village&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Village.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Il ne faudra pas longtemps pour que l’armée française décide de battre en retraite. Cet accident fût le coup dur de trop pour les troupes du Maréchal qui finit par renoncer à reprendre Arras. La ville restera espagnole encore quelques décennies. 
+Pendant ce temps là vous êtes sur le chemin du retour, passant par forêts et champs dans la hâte de retrouver votre tendre épouse.@@
+
+
+@@#Link;[[Rentrer à la maison]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Rentrer à la maison" tags="Fin" position="1125,2375" size="100,100">&lt;&lt;if $calin is 1&gt;&gt;
+
+    /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Village_wife&#39;)&lt;/script&gt;
+    /* Ambiant current music */
+    &lt;audio id=&quot;monAudio&quot;&gt;
+    &lt;source src=&quot;narration/Femme_fin_heureuse.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    &lt;/audio&gt;
+    &lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+    &lt;/script&gt; 
+    
+    &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;	
+    @@#Narrator;Vous ouvrez la porte, vous voilà enfin rentré et en vie. Que c’est bon d&#39;être chez soi !
+
+    Votre femme tricote devant la cheminée@@
+
+    &quot;Mon amour ! J’ai eu si peur … Viens dans mes bras&quot;
+
+    @@#Narrator;D’habitude vous en avez marre de ses câlins… Mais celui-ci est merveilleux. Il marque une fin. Elle est belle votre 	vie finalement. 	Loin des cris et des tirs. Vive la vie de gueux !@@
+    
+    @@#Link;[[Fin]]@@
+	&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+&lt;&lt;else&gt;&gt;
+	
+    /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Village_wife&#39;)&lt;/script&gt;
+    /* Ambiant current music */
+    &lt;audio id=&quot;monAudio&quot;&gt;
+    &lt;source src=&quot;narration/Femme_fin_méchante.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    &lt;/audio&gt;
+    &lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+    &lt;/script&gt; 
+    
+	&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;	
+    @@#Narrator;Vous ouvrez la porte, vous voilà enfin rentré et en vie. Que c’est bon d&#39;être chez soi ! Et bizarrement, 	  c’est votre 			femme qui vous manque le plus. La prendre dans vos bras quel bonheur !
+
+Votre femme tricote devant la cheminée. Elle baisse la tête … Saisit une poêle sur la table…@@
+
+    &quot;ESPÈCE DE GOUJAT TU VAS PAS T&#39;EN TIRER COMME CA&quot;
+
+    @@#Narrator;Coup de poêle, coup de chaise, coup de poing et coup de pied… Finalement la guerre c’était bien !@@
+	
+
+
+	@@#Link;[[Fin]]@@
+	&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+    
+&lt;&lt;endif&gt;&gt;
+</tw-passagedata><tw-passagedata pid="28" name="Réveil du cuisinier" tags="" position="600,725" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Cuisine_cuistot&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+
+/* Narration audio */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;narration/cuisinier_début.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $réveil_cuisinier to 1&gt;&gt;
+ 
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Vous vous approchez tout doucement du cuisinier endormi. 
+Il a l’air en plein cauchemar, vous l’entendez chuchoter :@@
+Je ne veux pas partir, NON ! je ne veux pas …”   @@#Narrator;De quoi peut-il bien parler ? 
+Vous prenez pitié de lui et le libérez de son sommeil.@@ 
+
+Ah l’ami ! je te suis reconnaissant de m’avoir tiré de ce mauvais rêve, tu es bien serviable ! 
+Par le plus grand des hasard, aurais tu quelque temps pour m’aider ? Je sais bien que j’abuse de ton amabilité mais vois-tu… j’ai quelques soucis de coeur. 
+J’ai rencontré il y a de cela quelques semaines déjà, avant le début de cette guerre sans intérêt, une dame si douce, si belle et si intelligente que j’en suis tombé fou amoureux. 
+
+Hélas ! elle partit pour le siège ! 
+
+Je suis donc venu ici pour suivre sa trace et lui déclarer ma flamme. C&#39;est ainsi que j’ai atterri dans cette cuisine, mois qui n’avait jamais touché à une gamelle de ma vie ! 
+Mais pour elle, Oh charmante Celindra, j’irais n’importe où ! 
+J’ai cru ouir qu’elle se trouvait à l’armurerie. Saurais-tu toi, mon ami, lui porter cette missive ? 
+Je saurais te remercier à ta juste valeur !
+
+@@#Narrator;Il n’a pas l’air méchant le bougre … et qui sait, vous pourriez bien en tirer quelque chose@@ 
+@@#Link;[[Prendre la lettre]]@@ 
+@@#Narrator;C’est hors de question ! Vous avez tout de même mieux à faire que de régler les affaires d’un cuisinier trop sentimental@@ 
+@@#Link;[[Quittez la cuisine|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="29" name="Cuisinier endormi" tags="" position="600,475" size="100,100">/* Ambiant current music */
+
+/* Narration audio */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;narration/cuisinier_sipasreveillé.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Cuisine_cuistot&#39;)&lt;/script&gt;
+      
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $réveil_cuisinier to 1&gt;&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Vous choisissez de vous retirer doucement pour ne pas le tirer de son sommeil, il a l’air si paisible … 
+…
+…
+… 
+💥BOUM💥 Vous trébuchez sur un tas de saladiers et finissez dans un pâté de sanglier à l’odeur suspicieuse. 
+
+
+
+D’un bon le cuisinier se lève et vous fait face, armé d’une poêle en cuivre. Il n’est pas bien intimidant mais vous avez appris à vous méfier des poêles, surtout dans les mains de votre femme. Il vous interpelle :@@ 
+
+Toi ! Qui es-tu ? Un autre de ces chapardeurs qui rodent près de ma cuisine ? 
+Si tu ne veux pas que je te dénonce au maréchal, tu ferais mieux de m’aider. J’ai rencontré il y a de cela quelques semaines déjà, avant le début de cette guerre sans intérêt, une dame si douce, si belle et si intelligente que j’en suis tombé fou amoureux. 
+
+Hélas ! elle partit pour le siège ! 
+
+Je suis donc venu ici pour suivre sa trace et lui déclarer ma flamme. C&#39;est ainsi que j’ai atterri dans cette cuisine, mois qui n’avait jamais touché à une gamelle de ma vie !
+
+@@#Narrator;Il s’emporte, fou d’amour@@ 
+
+Mais pour elle, Oh charmante Celindra, j’irais n’importe où ! 
+J’ai cru ouir qu’elle se trouvait à l’armurerie. Porte lui cette missive, c’est bien la moindre des choses après avoir écrasé ce pâté, que dis-je ce chef-d’oeuvre culinaire !
+
+@@#Narrator;Il n’a pas l’air méchant le bougre … et qui sait, vous pourriez bien en tirer quelque chose@@ 
+@@#Link;[[Prendre la lettre]]@@ 
+@@#Narrator;C’est hors de question ! Vous avez tout de même mieux à faire que de régler les affaires d’un cuisinier trop sentimental@@ 
+@@#Link;[[Quittez la cuisine|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="30" name="Lettre Celindra" tags="" position="1650,1150" size="100,100"> /* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Armurerie_felindra&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;narration/Celindra lettre.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;  
+
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+Le cuisinier ? Donne moi cette lettre immédiatement !
+
+@@#Narrator;En levant les yeux vous découvrez votre interlocutrice. C’est une femme d’une grande beauté, aux traits durs et fins mais le bleu de ses yeux s’adoucit à votre mention du cuisinier. C’est elle Celindra ? Le cuisinier serait-il donc amoureux de cette brute ? Quel drôle de couple ils feraient… Elle est absorbée par la lettre et ne vous porte plus aucune attention. Il serait judicieux d’en profiter pour vous éclipser.@@
+
+&lt;&lt;set $lettre_amenée to 1&gt;&gt;
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Fin" tags="" position="1050,2700" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Intro&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Intro.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt; 
+
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text_intro&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Et voilà, c&#39;est déjà la fin de l&#39;aventure...
+
+Mais peut-être que si vous aviez fait d&#39;autres choix, votre sort aurait été différent. Il n&#39;y a qu&#39;un seul moyen de le savoir, [[Réessayer|Village]].
+
+Ou bien, si vous en avez assez de jouer le rôle d&#39;un gueux, vous pouvez [[Quitter|Exit]].@@
+
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+
+
+
+</tw-passagedata><tw-passagedata pid="32" name="Exit" tags="" position="1400,2975" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Intro&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Intro.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt; 
+
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text_intro&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+Merci beaucoup de vous êtes prêté au jeu ! Nous espérons que vous avez bien profité de cette expérience, certes un peu décalée.
+
+Crédits : 
+
+Serge Bouchardon pour son accompagnement et sa pédagogie 
+Midjourney pour sa grande intelligence (artificielle) 
+Edmond Rostand pour son personnage de Cyrano 
+Charles Aznavour pour sa carrière 
+
+Un récit imaginé par Thomas BORDES, Lisa FAVARETTO, Etienne MORAMBERT, Jacques SICARD et Antoine SOMMIER
+
+Source des images : Gallica - Bnf carte du siège d’Arras 
+
+@@#Link;[[Rejouer|Village]]@@
+
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+
+
+
+</tw-passagedata><tw-passagedata pid="33" name="Champ de Bataille-bis" tags="" position="725,1800" size="100,100">
+&lt;&lt;if $dodo is 1 ||  $manger is 1&gt;&gt;
+
+    /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille&#39;)&lt;/script&gt;
+    /* Ambiant current music */
+    &lt;audio id=&quot;monAudio&quot; &gt;
+    &lt;source src=&quot;narration/Prise d_Arras gueux mort.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    &lt;/audio&gt;
+    &lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+    &lt;/script&gt; 
+      
+    &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+    Vous êtes déterminé comme jamais.
+
+    @@#Narrator;Vous vous devez de venger de la mort de Christian, votre râge vous donne une forme divine, personne ne peut vous arrêter !
+
+Les soldats suivent votre exemple, vous êtes comme un modèle pour eux. Vous les aidez, les relevez. La victoire approche, vous irez jusqu&#39;au bout ! 
+
+ Le maréchal arrive sur son grand cheval blanc pour se battre à vos côtés !@@
+
+ “Allez soldats, ils sont à bout ! On doit donner le coup final maintenant ou jamais !”
+
+    @@#Narrator;Du coin de l&#39;oeuil, vous voyez un soldat espagnol arriver dans son dos.
+
+  Alors que vous courrez le soutenir, une balle vous transperce la poitrine….
+
+  Du sang coule…
+
+  Vous vous sentez partir… 
+    
+  Votre dernière pensée va à votre tendre femme ... 
+
+   Vous entendez des voies au loin crier@@
+
+    C’est bon on a gagné ! C’est fait ! À nous Arras ! 
+
+    @@#Link;[[Suite|Fin Mort]]@@
+    &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+    
+&lt;&lt;elseif $dodo is 1 and  $manger is 1&gt;&gt;
+
+    /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille&#39;)&lt;/script&gt;
+    /* Ambiant current music */
+    &lt;audio id=&quot;monAudio&quot; &gt;
+    &lt;source src=&quot;narration/Prise d_Arras gueux mort.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    &lt;/audio&gt;
+    &lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+    &lt;/script&gt; 
+      
+    &lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+    Vous êtes déterminé comme jamais.
+
+    @@#Narrator;Vous vous devez de venger de la mort de Christian, votre râge vous donne une forme divine, personne ne peut vous arrêter !
+
+Les soldats suivent votre exemple, vous êtes comme un modèle pour eux. Vous les aidez, les relevez. La victoire approche, vous irez jusqu&#39;au bout ! 
+
+ Le maréchal arrive sur son grand cheval blanc pour se battre à vos côtés !@@
+
+ “Allez soldats, ils sont à bout ! On doit donner le coup final maintenant ou jamais !”
+
+    @@#Narrator;Du coin de l&#39;oeuil, vous voyez un soldat espagnol arriver dans son dos.
+
+  Alors que vous courrez le soutenir, une balle vous transperce la poitrine….
+
+  Du sang coule…
+
+  Vous vous sentez partir… 
+    
+  Votre dernière pensée va à votre tendre femme ... 
+
+   Vous entendez des voies au loin crier@@
+
+    C’est bon on a gagné ! C’est fait ! À nous Arras ! 
+
+    @@#Link;[[Suite|Fin Mort]]@@
+    &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+    
+&lt;&lt;else&gt;&gt;
+
+    /* Image background */
+    &lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille&#39;)&lt;/script&gt;
+    /* Ambiant current music */
+    &lt;audio id=&quot;monAudio&quot; &gt;
+    &lt;source src=&quot;narration/Prise d_Arras gueux vivant.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    &lt;/audio&gt;
+    &lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+    &lt;/script&gt; 
+    
+	&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+    @@#Narrator;Vous arrivez tant bien que mal sur la bataille, il est tard… Depuis ce matin vous ne faites que courir sans 		vous reposer ni 	manger un peu… Ce n&#39;est pas le meilleur moment pour entamer une bataille, c&#39;est certain. 
+
+    Le maréchal arrive@@
+
+    &quot;Allez ! Bougez-vous soldat vous êtes en retard !&quot;
+
+    @@#Narrator;Pénible le gars… 
+
+Vous courez vers l&#39;ennemi mais vos paupières sont lourdes … Beaucoup trop lourdes…
+
+    OH NON un corps sur votre chemin ! C’est la chute… En tombant vous tirez une balle !
+
+    Un grand silence s&#39;étend sur le champ de bataille… 
+
+    Le capitaine viens vous relève avec un sourire jusqu’aux oreilles@@ 
+
+    &quot;BRAVO SOLDAT BRAVO&quot;
+
+    @@#Narrator;Vous regardez derrière son épaule. 
+
+ Les Espagnols courent avec un corps … Il s’agit de l&#39;amiral en chef du camp ennemi ! Du sang coule sur son visage…			@@ 
+
+    &quot;En plein entre les deux yeux, t’as bien été entraîné au tir le gueux !&quot;
+
+    @@#Narrator;Vous n&#39;en croyez pas un mot… Est-ce bien vous qui venez de tuer l’amiral espagnol ?@@
+
+    &quot;Allons soldats, ils sont faible et démunis, chargez !!!&quot;
+
+    @@#Narrator;Jamais vous n&#39;avez vu les soldats aussi motivés !@@
+
+	@@#Link;[[Suite|Fin héros]]@@
+	&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Fin Mort" tags="Fin" position="550,2050" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Champ de bataille.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+&lt;div class=&quot;text_intro&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Vous souriez, c’est bon, vous avez réussi. L’histoire se rappelera de vous comme le leader de la dernière offensive. Une larme coule sur votre joue. 
+Bravo Monsieur le Gueux. Arras vous remercie.@@
+
+@@#Link;[[Fin]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Fin héros" tags="" position="825,2050" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Champ de bataille.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+&lt;div class=&quot;text_intro&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Deux semaines se sont écoulées, les français ont gagné grâce à la mort de l’amiral. Vous avez été décoré par le roi lui-même ! Vous êtes désormais prêt à rentrer chez votre femme, fier de lui raconter votre aventure !@@
+
+@@#Link;[[Rentrer à la maison]] @@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Suite couteau" tags="" position="575,1075" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Tente_capitaine_couteau&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Commandant.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;  
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Une fois son discours terminé, le maréchal s&#39;en va. Mais vous remarquez quelque chose de brillant dans l&#39;herbe. C&#39;est le couteau du maréchal ! Il a dû le faire tomber sans s&#39;en rendre compte. Vous en êtes suffisamment proche pour vous en saisir sans que personne ne s&#39;en aperçoive… enfin normalement@@
+
+@@#Link;[[Prendre le couteau|Couteau pris]]@@
+@@#Link;[[L&#39;ignorer|Couteau pas pris]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Tuer le soldat" tags="" position="2325,1225" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_espagnol&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/Espagnol_mort.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $mort_espagnol to 1&gt;&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Vous sortez votre couteau de votre poche.@@
+&quot;Non, non ! Je suis un ami, je peux t’aid… &quot;
+@@#Narrator;Mais trop tard vous lui enfoncez la lame dans le torse et il s’écroule.@@
+@@#Narrator;Vous vous écartez discrètement, vous n’avez pas trop envie qu’on sache que vous assassinez des prisonniers sans raison.@@
+@@#Link;[[Retourner à la carte|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="PassageDone" tags="" position="1925,75" size="100,100">/* ---------------------------------------------------------------------- */
+/* A conserver pour avoir le clignottement des éléments de la carte */
+/* ---------------------------------------------------------------------- */
+
+/* Ambiant current music */
+&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;
+
+
+&lt;&lt;script&gt;&gt;
+
+// Apply maphilight to all images that have a usemap attribute, e.g.
+// all the maps that are in this twine. This sets the default styling
+// for all the maps. These are all the possible styling options.
+// Note: for picking colors, check out http://hslpicker.com/. You can
+// copy the HEX value as long as you leave off the &quot;#&quot;.
+$(&quot;img[usemap]&quot;).maphilight({
+  fill: true,             	// Fill the area?
+  fillColor: &#39;030000&#39;,    	// HEX format without the starting &quot;#&quot;
+  fillOpacity: 0.5,       	// Opacity of the filled area
+  stroke: true,           	// Outline the area?
+  strokeColor: &#39;030000&#39;,
+  strokeOpacity: 0.5,
+  strokeWidth: 3,			// Outline width
+  fade: true,             	// Animate when hovered with a fade?
+  alwaysOn: false,        	// Always show the areas?
+  neverOn: false,
+  groupBy: false,
+  wrapClass: true,
+  shadow: false,
+  shadowX: 0,
+  shadowY: 0,
+  shadowRadius: 6,
+  shadowColor: &#39;000000&#39;,
+  shadowOpacity: 0.8,
+  shadowPosition: &#39;outside&#39;,
+  shadowFrom: false
+});
+
+&lt;&lt;/script&gt;&gt;
+
+
+
+
+
+	</tw-passagedata><tw-passagedata pid="39" name="Gros Nez" tags="" position="2475,925" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_cyrano&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/Cyrano tirade.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $vexe_cyrano to 1&gt;&gt;
+&lt;&lt;set $ligne_de_front_passage to 1&gt;&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Il se vexe, vous fait la tirade des nez et vous saoule.@@
+
+Quoi ?? Qu’entend-je ?? Qu&#39;ouïs-je ?
+Toi ?? Petit ange ?? ça te dérange ? 
+
+T’insinues qu’il est si grand 
+Que n’importe quelle tâche tombe dedans ? 
+Ah non je suis déçu monsieur
+Vous auriez pu faire mieux
+
+Allez mon gueux, je vous aide ? 
+Voilà comment on procède : 
+
+Agressif : « Moi, monsieur, si j’avais un tel nez,
+Il faudrait sur-le-champ que je me l’amputasse ! »
+Amical : « Mais il doit tremper dans votre tasse
+Pour boire, faites-vous fabriquer un hanap ! »
+Descriptif : « C’est un roc ! … c’est un pic ! … c’est un cap !
+Que dis-je, c’est un cap ? … C’est une péninsule ! »
+Curieux : « De quoi sert cette oblongue capsule ?
+D’écritoire, monsieur, ou de boîte à ciseaux ? »
+Gracieux : « Aimez-vous à ce point les oiseaux
+Que paternellement vous vous préoccupâtes
+De tendre ce perchoir à leurs petites pattes ? »
+Truculent : « Ça, monsieur, lorsque vous pétunez,
+La vapeur du tabac vous sort-elle du nez
+Sans qu’un voisin ne crie au feu de cheminée ? »
+Prévenant : « Gardez-vous, votre tête entraînée
+Par ce poids, de tomber en avant sur le sol ! »
+Tendre : « Faites-lui faire un petit parasol
+De peur que sa couleur au soleil ne se fane ! »
+Pédant : « L’animal seul, monsieur, qu’Aristophane
+Appelle Hippocampéléphantocamélos
+Dut avoir sous le front tant de chair sur tant d’os ! »
+Cavalier : « Quoi, l’ami, ce croc est à la mode ?
+Pour pendre son chapeau, c’est vraiment très commode ! »
+Emphatique : « Aucun vent ne peut, nez magistral,
+T’enrhumer tout entier, excepté le mistral ! »
+Dramatique : « C’est la Mer Rouge quand il saigne ! »
+Admiratif : « Pour un parfumeur, quelle enseigne ! »
+Lyrique : « Est-ce une conque, êtes-vous un triton ? »
+Naïf : « Ce monument, quand le visite-t-on ? »
+Respectueux : « Souffrez, monsieur, qu’on vous salue,
+C’est là ce qui s’appelle avoir pignon sur rue ! »
+Campagnard : « Hé, ardé ! C’est-y un nez ? Nanain !
+C’est queuqu’navet géant ou ben queuqu’melon nain ! »
+Militaire : « Pointez contre cavalerie ! »
+Pratique : « Voulez-vous le mettre en loterie ?
+Assurément, monsieur, ce sera le gros lot ! »
+
+@@#Narrator;Quelle honte…Voilà que tout le monde vous regarde maintenant… Les regards méprisants des autres soldats ne vous laisseront pas indifférent… Comment se permet-il de vous parler de la sorte alors que vous l’avez gentiment prévenu ? @@
+
+Bref, on m&#39;appelle autre part 
+Au revoir, jeune cafard !
+
+@@#Narrator;Les autres soldats rient…
+Mais alors que Cyrano s’en va, vous marchez sans savoir où vous allez, troublé par l&#39;humiliation que vous venez de subir.
+Soudain des gémissements vous interpellent. Vous voyez une étrange silhouette attachée à un poteau… Qui est cet homme?@@
+
+@@#Link;[[Se rapprocher|Espagnol cage]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="40" name="Nez normal" tags="" position="2700,925" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_cyrano&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/audio cyrano.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $ligne_de_front_passage to 1&gt;&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+Et bien mon brave vous n’êtes point bavard
+Au moins ça vous évite de mettre le bazar
+Allons soldat continuons l&#39;entraînement 
+Et vous ne mourrez pas bêtement
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Espagnol cage" tags="" position="2300,1075" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_espagnol&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/Espagnol_début.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $vexe_cyrano to 1&gt;&gt;
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator; En effet, vous entendez du bruit provenant d’un coin sombre à l’écart du tumulte de la ligne de front.@@
+&quot; Aaaahh ! De l’aide par pitié… &quot;
+
+&lt;&lt;if  $passage_offre is 1&gt;&gt;
+
+    Avez-vous changé d&#39;avis ?
+
+    @@#Link;[[Suivre l&#39;Espanol à Arras|Arras]]@@
+    @@#Link;[[Refuser l&#39;offre|Refu offre]]@@
+    @@#Link;[[Retourner à la carte|Carte]]@@
+    
+&lt;&lt;elseif $pomme is 0 and $cereales is 0&gt;&gt;
+    @@#Narrator;Votre curiosité vous pousse à jeter un coup d&#39;œil… Il s’agit d’un soldat espagnol attaché à un poteau. Il est dans un sale état et semble affaibli.@@
+	&lt;&lt;if $couteau is 1&gt;&gt;
+        @@#Link;[[Tuer le soldat]]@@
+        @@#Link;[[Ignorer le soldat|Ignorer espagnol]]@@
+     &lt;&lt;else&gt;&gt;
+        @@#Link;[[Ignorer le soldat|Ignorer espagnol]]@@
+     &lt;&lt;endif&gt;&gt;
+ &lt;&lt;elseif $pomme is 1 and $cereales is 0&gt;&gt;
+    @@#Narrator;Votre curiosité vous pousse à jeter un coup d&#39;œil… Il s’agit d’un soldat espagnol attaché à un poteau. Il est dans un 	 sale état et semble affaibli.@@
+	&lt;&lt;if $couteau is 1&gt;&gt;
+		@@#Link;[[Donner la pomme|Nourrir l&#39;espagnol]]@@
+        @@#Link;[[Tuer le soldat]]@@
+        @@#Link;[[Ignorer le soldat|Ignorer espagnol]]@@
+     &lt;&lt;else&gt;&gt;
+     	@@#Link;[[Donner la pomme|Nourrir l&#39;espagnol]]@@
+        @@#Link;[[Ignorer le soldat|Ignorer espagnol]]@@
+     &lt;&lt;endif&gt;&gt;
+  &lt;&lt;elseif $pomme is 0 and $cereales is 1&gt;&gt;
+    @@#Narrator;Votre curiosité vous pousse à jeter un coup d&#39;œil… Il s’agit d’un soldat espagnol attaché à un poteau. Il est dans un 	 sale état et semble affaibli.@@
+	&lt;&lt;if $couteau is 1&gt;&gt;
+		@@#Link;[[Donner les céréales|Nourrir l&#39;espagnol]]@@
+        @@#Link;[[Tuer le soldat]]@@
+        @@#Link;[[Ignorer le soldat|Ignorer espagnol]]@@
+     &lt;&lt;else&gt;&gt;
+     	@@#Link;[[Donner les céréales|Nourrir l&#39;espagnol]]@@
+        @@#Link;[[Ignorer le soldat|Ignorer espagnol]]@@
+     &lt;&lt;endif&gt;&gt;
+ &lt;&lt;elseif $pomme is 1 and $cereales is 1&gt;&gt;
+    @@#Narrator;Votre curiosité vous pousse à jeter un coup d&#39;œil… Il s’agit d’un soldat espagnol attaché à un poteau. Il est dans un 	 sale état et semble affaibli.@@
+	&lt;&lt;if $couteau is 1&gt;&gt;
+		@@#Link;[[Donner la pomme|Nourrir l&#39;espagnol]]@@
+        @@#Link;[[Donner les céréales|Nourrir l&#39;espagnol]]@@
+        @@#Link;[[Tuer le soldat]]@@
+        @@#Link;[[Ignorer le soldat|Ignorer espagnol]]@@
+     &lt;&lt;else&gt;&gt;
+     	@@#Link;[[Donner la pomme|Nourrir l&#39;espagnol]]@@
+        @@#Link;[[Donner les céréales|Nourrir l&#39;espagnol]]@@
+        @@#Link;[[Ignorer le soldat|Ignorer espagnol]]@@
+     &lt;&lt;endif&gt;&gt;     
+&lt;&lt;endif&gt;&gt;
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Nourrir l&#39;espagnol" tags="" position="2125,1225" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_espagnol&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/Espagnol_explications.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $nourri_espagnol to 1&gt;&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator; Il avale la nourriture et se redresse@@ 
+
+Hmm, je me sens revivre !
+
+@@#Narrator;Une fois qu’il a fini de manger, vous lui demandez ce qu’il lui est arrivé.@@
+
+J’étais sur le point de traverser le front pour porter un message. Hélas, j’ai certainement dû me faire repérer par vos éclaireurs. Ils ont ouvert le feu et m’ont touché à la jambe, puis ils m’ont amené ici et attaché comme un chien. J’aurais sans doute préféré qu’ils m’achèvent.
+
+@@#Narrator;Vous restez debout sans dire mot.@@
+
+Pour revenir à ce que je te disais, tu m’a l&#39;air d’un brave qui ne sait pas trop pourquoi ni pour qui il se bat. Et justement, ce n’est absolument pas pour toi, mais pour les intérêts des seigneurs qui n’ont pour toi aucune considération à l’image du Maréchal de Châtillon, ou même de ce fameux Cyrano de Bergerac.
+
+@@#Narrator;L’Espagnol se redresse. Il semble avoir repris du poil de la bête et s’exprime de façon convaincante.@@
+
+De mon point de vue, plus vite la guerre sera terminée, plus vite nous serons de retour chez nous. Et en somme, j’ai entrepris de rendre service à un camp pour précipiter la chute de l’autre. En effet je monnaie des informations stratégiques contre ma survie : les généraux espagnols en sont très demandeurs. D’ailleurs des gens comme toi pourraient les intéresser. Si tu veux en faire autant de ton côté, les actions de sabotages sont très efficaces. Par exemple, un incendie accidentel serait certainement très déstabilisant pour l&#39;armée française. Et qui sait, peut-être que ça te permettrait de déserter sans te faire repérer….
+
+@@#Narrator;Vous faites le tour de vos pensées. C’est vrai, votre femme vous manque et la revoir serait pour vous une bénédiction. Mais ne serait-ce pas lâche que de fuir le front de la sorte ? Sans compter des risques qui en découlent si vous vous faites prendre.@@
+
+@@#Link;[[Accepter la mission|Acceptation mission]]@@
+@@#Link;[[Refuser la mission|Refu mission]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Ignorer espagnol" tags="" position="2550,1225" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Ligne_de_front&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Ligne de front.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;A la vue de l’ennemi, vous êtes pris de panique. Bien que blessé et ligoté, vous pensez que s’approcher trop prêt de lui pourrait s’avérer dangereux. Vous décidez donc de passer votre chemin@@
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Boire" tags="" position="3150,825" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Infirmerie_infirm&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Infirmerie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+/* ---------------------------------------------------------------------- */
+
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+Prends ce verre d’eau , c’est important !
+@@#Link;[[Retourner à la carte|Carte]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="45" name="Ne pas boire" tags="" position="3300,825" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Infirmerie_infirm&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Infirmerie.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+
+
+/* ---------------------------------------------------------------------- */
+
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+Et bah tant mieux ! Repasse me voir si tu as besoin de quelque chose.
+@@#Link;[[Retourner à la carte|Carte]]@@
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="46" name="Faire un petit rompiche" tags="" position="1250,1025" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Dortoir&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Dortoir.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;  
+
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $dodo to 1&gt;&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Narrator;Vous dormez,  personne ne vous trouve@@
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;
+
+
+</tw-passagedata><tw-passagedata pid="47" name="Refu mission" tags="" position="2200,1400" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_espagnol&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;narration/Espagnol_arras.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+Hmm, je vois. Tu es un peu du genre trouillard, toi ? Cela n&#39;empêche que maintenant tu es un traître aux yeux des tiens puisque tu as aidé un ennemi. Quelqu’un pourrait nous avoir vu, et si tu décides de retourner au camp comme si de rien n’était, je ne donne pas cher de ta peau… A moins que tu ne décides de me suivre et de rejoindre le camp espagnol. Peut-être pourras-tu nous aider en tant qu’informateur, et dans ce cas tu serais amplement récompensé.
+
+&lt;&lt;set $passage_offre to 1&gt;&gt;
+
+@@#Link;[[Suivre l&#39;Espanol à Arras|Arras]]@@
+@@#Link;[[Refuser l&#39;offre|Refu offre]]@@
+@@#Link;[[Retourner à la carte|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Acceptation mission" tags="" position="2025,1400" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Ligne_de_front&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Ligne de front.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;&lt;set $trahison_incendie to 1&gt;&gt;
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Vous retournez donc au camp, comme si de rien n’était, après avoir détaché l’Espagnol qui a fuit discrètement.
+Vous n’avez pas envie de mourir comme un animal au cours des combats. De plus, cette guerre ne vous concerne pas et les militaires ne vous reconnaissent pas à votre juste valeur. Peut-être qu’une diversion serait suffisamment efficace pour partir en douce…
+Mais en même temps vous hésitez, l’entreprise est périlleuse et vous risquez de provoquer la mort d’innocents. Et, quelles seraient les répercussions si jamais vous veniez à être pris la main dans le sac ?
+@@
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Refu offre" tags="" position="2325,1575" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Champ_de_bataille_espagnol&#39;)&lt;/script&gt;
+
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot;&gt;
+&lt;source src=&quot;musique/Ligne de front.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+var audio = document.getElementById(&quot;monAudio&quot;);
+audio.play();
+&lt;/script&gt;
+/* ---------------------------------------------------------------------- */
+
+&lt;div class=&quot;text&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Trahir la France ? Jamais de la vie. Ou bien, est-ce parce que vous n’avez pas le courage de vous engager dans une telle opération ? Dans tous les cas, vous décidez de faire demi-tour et de laisser l&#39;Espagnol à son propre sort.@@
+
+@@#Link;[[Retourner à la carte|Carte]]@@
+
+&lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Personnages1" tags="" position="2300,300" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Personnages1&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Personnages.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+&lt;Carte&gt;
+&lt;div class=&quot;text_personnages&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Link;[[Autres personnages|Personnages2]]@@
+@@#Link;[[Retourner à la carte|Carte]]@@
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+ &lt;/Carte&gt;</tw-passagedata><tw-passagedata pid="51" name="Personnages2" tags="" position="2450,300" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Personnages2&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Personnages.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+&lt;div class=&quot;text_personnages&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Link;[[Autres personnages|Personnages3]]@@
+@@#Link;[[Retourner à la carte|Carte]]@@
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Personnages3" tags="" position="2575,300" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Personnages3&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Personnages.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+&lt;div class=&quot;text_personnages&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Link;[[Autres personnages|Personnages4]]@@
+@@#Link;[[Retourner à la carte|Carte]]@@
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+ 
+ </tw-passagedata><tw-passagedata pid="53" name="Personnages4" tags="" position="2700,300" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Personnages4&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Personnages.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+&lt;div class=&quot;text_personnages&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Link;[[Autres personnages|Personnages5]]@@
+@@#Link;[[Retourner à la carte|Carte]]@@
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+ 
+</tw-passagedata><tw-passagedata pid="54" name="Fin Mort Capturé Arras" tags="Fin" position="1775,2275" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Arras_by_night&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;
+&lt;&lt;audio Personnages_audio play&gt;&gt;
+
+&lt;div class=&quot;text_intro&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+
+@@#Narrator;Les gardes se saisissent de leurs armes et vous finissez exécuté sur le champ…C&#39;est quand même idiot d&#39;avoir été pris pour un espion, tout ça à cause d&#39;un simple couteau. Le volez ou ne pas le voler, telle était la question. 
+
+Allez, on [[réessaie|Village]] ?
+
+
+Ou bien, si vous en avez assez de jouer le rôle d&#39;un gueux, vous pouvez [[Quitter|Exit]].@@
+
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Personnages5" tags="" position="2825,300" size="100,100">/* Image background */
+&lt;script&gt;$(&#39;body&#39;).removeClass().addClass(&#39;Personnages5&#39;)&lt;/script&gt;
+/* Ambiant current music */
+&lt;audio id=&quot;monAudio&quot; &gt;
+&lt;source src=&quot;musique/Personnages.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;script&gt;
+    var audio = document.getElementById(&quot;monAudio&quot;);
+    audio.play();
+&lt;/script&gt;
+&lt;div class=&quot;text_personnages&quot;&gt;&lt;&lt;type &quot;15ms&quot; skipkey &quot;Tab&quot;&gt;&gt;
+@@#Link;[[Retourner à la carte|Carte]]@@
+ &lt;&lt;/type&gt;&gt;&lt;/div&gt;
+ 
+</tw-passagedata></tw-storydata>
